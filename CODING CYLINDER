@@ -1,0 +1,33 @@
+package question1;
+
+import java.util.Scanner;
+
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner declaration
+		Scanner sc = new Scanner(System.in);
+		
+		double radius,height, baseArea=0,surfaceArea=0,volume=0;
+		System.out.println("Please enter the base radius of cylinder :");  
+	    radius=sc.nextDouble();
+	    System.out.println("Please enter the height of cylinder :");  
+	    height=sc.nextDouble();
+	    
+	    baseArea = Math.PI * radius * radius;
+	    surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+	    volume = baseArea * height;
+	    
+	    System.out.printf("The base area of the cylinder is :  %.2f ", baseArea);
+		System.out.print("\n");
+		System.out.printf("The surface area of the cylinder is :  %.2f ", surfaceArea);
+		System.out.print("\n");
+		System.out.printf("The volume of cylinder is :  %.2f ", volume);
+		System.out.print("\n");
+	    
+	    
+
+	}
+
+}
